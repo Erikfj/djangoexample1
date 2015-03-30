@@ -12,7 +12,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$("#increase_number_of_courses").click(function(event) {
+	$("#increase_number_of_courses_button").click(function(event) {
 		event.preventDefault();
 		$.ajax({
 			url: $('#number_of_courses_url').val()  
@@ -22,12 +22,6 @@ $(document).ready(function(){
 			$("#number_of_courses_cell").html(number_of_courses_updated) 
 		});
 	});
-
-
-
-
-
-
 
 
 });
