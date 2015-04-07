@@ -15,6 +15,7 @@ def student_details(request, student_id):
     context = {'student': student}
     return render(request, 'students/student_details.html', context)
 
+@csrf_exempt
 def student_increase_passed_exams(request, student_id):
 	student = Student.objects.get(pk=student_id)
 	student.passed_exams = student.passed_exams + 1

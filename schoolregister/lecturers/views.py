@@ -15,6 +15,7 @@ def lecturer_details(request, lecturer_id):
     context = {'lecturer': lecturer}
     return render(request, 'lecturers/lecturer_details.html', context)
 
+@csrf_exempt
 def lecturer_increase_number_of_courses(request, lecturer_id):
 	lecturer = Lecturer.objects.get(pk=lecturer_id)
 	lecturer.number_of_courses = lecturer.number_of_courses + 1
