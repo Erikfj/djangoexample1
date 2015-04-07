@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$("#increase_passed_exams_button").click(function(event) {
 		event.preventDefault();
 		$.ajax({
+			method: "POST",
 			url: $('#passed_exams_url').val()   
 		})
 		.done(function(data){
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	$("#increase_number_of_courses_button").click(function(event) {
 		event.preventDefault();
 		$.ajax({
+			method: "POST",
 			url: $('#number_of_courses_url').val()  
 		})
 		.done(function(data){
