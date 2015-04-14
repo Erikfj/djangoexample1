@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'students',
     'theme',
-    'lecturers'
+    'lecturers',
+    'useraccounts',
 )
 
 MIDDLEWARE_CLASSES = (

@@ -6,5 +6,5 @@ urlpatterns = patterns('',
     url(r'^students/', include('students.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^lecturers/', include('lecturers.urls')),
-
+    url(r'^useraccounts/', include('useraccounts.urls')),
 )
