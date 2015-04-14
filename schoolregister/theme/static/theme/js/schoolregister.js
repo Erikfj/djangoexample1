@@ -10,9 +10,8 @@ $(document).ready(function(){
 			url: $('#add_points_url').val() + "/" + note_id  
 		})
 		.done(function(data){
-			var points_updated = data['points_updated']; 
-			var points_element_id = "#id-points-for-note" + note_id;
-			$(points_element_id).html(points_updated);
+			var points_updated = data['points_updated'];
+			$("#points_element_id").html(points_updated);
 		});
 	});
 
